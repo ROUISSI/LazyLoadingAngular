@@ -7,6 +7,7 @@ import { MyModalComponent } from './shared/my-modal/my-modal.component';
 import { AngularMaterialModule } from './material/angular-material.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import { SearchByNamePipe } from './shared/pipe/search-by-name.pipe';
 
 
 
@@ -14,7 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     MyModalComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
