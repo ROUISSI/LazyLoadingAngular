@@ -3,14 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { CustomersRoutingModule } from './customers-routing.module';
 import { CustomersComponent } from './customers.component';
-import { MatSliderModule } from '../material/angular.material';
+import { FormsModule } from '@angular/forms';
+import { AngularMaterialModule } from '../material/angular-material.module';
+
+
 
 @NgModule({
   declarations: [CustomersComponent],
   imports: [
     CommonModule,
     CustomersRoutingModule,
-    MatSliderModule,
-  ]
+    FormsModule,
+    AngularMaterialModule
+    ]
 })
 export class CustomersModule { }

@@ -1,1 +1,11 @@
-customers : <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+<div>
+    <mat-form-field>
+      <input matInput [(ngModel)]="name" placeholder="What's your favorite color?">
+    </mat-form-field>
+  </div>
+  <div>
+    <button mat-raised-button (click)="openDialog()">Open Customers Modal</button>
+  </div>
+  <h4 *ngIf="modalResult">
+    This module's modla details: <p style="font-weight: bold">{{modalResult}}</p>
+  </h4>

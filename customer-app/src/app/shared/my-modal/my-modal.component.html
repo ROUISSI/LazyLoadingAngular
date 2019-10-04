@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Title {{data.title}}</h1>
+<h5 mat-dialog-title>Hi {{data.name}}</h5>
+<div mat-dialog-content>
+  <p>What's your favorite color?</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.color">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+        <p>Footer {{data.footer}}</p>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>
